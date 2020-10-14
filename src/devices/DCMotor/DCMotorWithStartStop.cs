@@ -24,7 +24,7 @@ namespace Iot.Device.DCMotor
         /// <param name="innerMotor">Crate DCMotor instance</param>
         /// <param name="controller"><see cref="GpioController"/> related with operations on pins</param>
         /// <param name="shouldDispose">True to dispose the Gpio Controller</param>
-        public DCMotorWithStartStop(DCMotor innerMotor, GpioController controller, bool shouldDispose)
+        public DCMotorWithStartStop(DCMotor innerMotor, GpioController controller, bool shouldDispose = false)
             : base(controller, shouldDispose)
         {
             _inner = innerMotor;
